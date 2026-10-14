@@ -20,6 +20,27 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Doctor portfolio demo content
+
+The profile is fictional sample content for a Bangladeshi consultant physician.
+Profile copy, sample qualifications, services, chamber details, contact
+information, appointment URL, WhatsApp number, and optional social links are
+centralized in `src/data/doctor.js`. Replace the fictional name and copy, and
+verify all qualifications, experience, services, chamber details, hours, and
+contact information before publication. The example email uses the reserved
+`example.com` domain, and the masked phone number is intentionally not
+callable.
+
+The appointment page at `/appointment` provides a client-side booking-form
+demonstration. It does not send or save patient details; connect a secure,
+verified booking service before accepting real requests. For WhatsApp, set
+`whatsappNumber` to a verified international number using digits only
+(country code followed by the number).
+
+`socialLinks` is an array of `{ label, url }` objects. The profile portrait
+uses a remote image and switches to a local illustrated fallback if that image
+cannot load. Review all sample content before publication.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
